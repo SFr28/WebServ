@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Ghibli;
+    src: url(../fonts/ghibli/Ghibli.otf) format("truetype");
+}
+
+body {
+    background-color: #716e81;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Ghibli;
+    color:rgb(58, 53, 53);
+    text-align: center;
+    font-size: 25px;
+}

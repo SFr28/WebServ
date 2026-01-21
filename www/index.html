@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Webby</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/styles.css">
+	<script src="java/delete.js" defer></script>
+</head>
+
+<body>
+	<br>
+	<h1 style="font-size: 60px;"> Welcome to Webby </h1>
+	<div class="flex">
+		<div class="grid-container">
+			<div class="container">
+				<h2>Redirect</h2>
+				<form action="/redirect" method="GET">
+					<button class="button" type="submit">Redirect</button>
+				</form>
+			</div>
+			<div class="container">
+				<h2>Upload a file</h2>
+				<form action="/uploads" method="POST" enctype="multipart/form-data">
+					<input type="file" id="upload" name="file" hidden />
+					<label for="upload">Select a file</label>
+					<button class="button" type="submit" name="submit">Upload</button>
+				</form>
+			</div>
+			<div class="container">
+				<h2>Delete a file</h2>
+				<input type="text" id="filename" name="deleteFiles" placeholder="Entrez le nom du fichier" required />
+				<button class="button" onclick="deleteFile()">Delete</button>
+			</div>
+			<div class="container">
+				<h2>Upload CGI</h2>
+				<form action="/cgi-bin/upload.py" method="POST" enctype="multipart/form-data">
+					<input type="file" id="upload_cgi" name="file" hidden />
+					<label for="upload_cgi">Select a file</label>
+					<button class="button" type="submit" name="submit">Upload CGI</button>
+				</form>
+			</div>
+			<div class="container">
+				<h2>Python CGI</h2>
+				<form action="/cgi-bin/calcul.py" method="GET">
+					<button class="button" type="submit">Python</button>
+				</form>
+			</div>
+			<div class="container">
+				<h2>Perl CGI</h2>
+				<form action="/cgi-bin/hello.pl" method="GET">
+					<button class="button" type="submit">Perl</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

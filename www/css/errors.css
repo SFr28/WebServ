@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Glitch Goblin;
+    src: url(../fonts/glitch-goblin-font/GlitchGoblin-2O87v.ttf) format("truetype");
+}
+
+body {
+    background-color: rgba(84, 138, 148, 0.808);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Glitch Goblin;
+    text-align: center;
+    font-size: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    flex: 25%
+}
+
+.grid-container {
+    display: grid;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

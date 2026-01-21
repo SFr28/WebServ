@@ -1,0 +1,24 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+/Objects
+*.o
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Executables
+*.exe
+*.out
+webserv
+
+# Others
+.vscode
+uploads/
+
+# Tests
+main_test.cpp
+test
+test.txt

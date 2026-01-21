@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Ghibli;
+    src: url(../fonts/ghibli/Ghibli.otf) format("truetype");
+}
+
+body {
+    background-image: url('../images/back.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Ghibli;
+    font-size: 20px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    flex: 25%
+}
+
+.grid-container {
+    display: grid;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.385);
+    margin: 15px;
+    padding: 15px 70px;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 4px 2px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(72, 124, 139)
+}
+
+.button:hover {
+    background-color: rgba(72, 124, 139, 0.767);
+    color: white;
+}
+
+label {
+    background-color: rgb(72, 124, 139);
+    color: white;
+    padding: 10px;
+    margin: 4px 2px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
